@@ -1,8 +1,8 @@
 from enum import Enum
 
-from ictacp.encryption import Encryption
-from ictacp.packet import Packet, PacketType
-import ictacp.util as util
+from pyictacp.encryption import Encryption
+from pyictacp.packet import Packet, PacketType
+import pyictacp.util as util
 
 class RecordType(Enum):
     SYSTEM = 0x00

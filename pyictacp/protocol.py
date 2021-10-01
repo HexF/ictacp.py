@@ -2,12 +2,12 @@ from asyncio import transports
 import logging
 import asyncio
 
-from ictacp.command import Command, RecordType
-import ictacp.command as cmd
-from ictacp.packet import HEADER_HIGH, HEADER_LOW, Packet, PacketType
-from ictacp.state import AreaFlags, AreaState, AreaTamperState, DoorLockState, DoorState, InputFlags, InputState, OutputState
-from ictacp.util import Checksum, calculate_checksum
-from ictacp.encryption import Encryption, NoneEncryption
+from pyictacp.command import Command, RecordType
+import pyictacp.command as cmd
+from pyictacp.packet import HEADER_HIGH, HEADER_LOW, Packet, PacketType
+from pyictacp.state import AreaFlags, AreaState, AreaTamperState, DoorLockState, DoorState, InputFlags, InputState, OutputState
+from pyictacp.util import Checksum, calculate_checksum
+from pyictacp.encryption import Encryption, NoneEncryption
 
 logger = logging.getLogger(__name__)
 

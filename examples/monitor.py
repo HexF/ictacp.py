@@ -1,10 +1,10 @@
 import sys,os
 sys.path.append(os.path.dirname(os.path.dirname(sys.argv[0])))
 
-from ictacp.command import RecordType
-from ictacp.protocol import ACPProtocol
-from ictacp.encryption import NoneEncryption
-from ictacp.util import Checksum
+from pyictacp.command import RecordType
+from pyictacp.protocol import ACPProtocol
+from pyictacp.encryption import NoneEncryption
+from pyictacp.util import Checksum
 
 import asyncio
 

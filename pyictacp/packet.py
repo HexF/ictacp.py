@@ -1,7 +1,7 @@
 from enum import Enum
 
-from ictacp.encryption import Encryption
-from ictacp.util import Checksum, calculate_checksum
+from pyictacp.encryption import Encryption
+from pyictacp.util import Checksum, calculate_checksum
 
 HEADER_HIGH = 0x43
 HEADER_LOW = 0x49
