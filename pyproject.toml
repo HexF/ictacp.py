@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "ictacp"
-version = "0.2.0"
+name = "pyictacp"
+version = "0.1.0"
 description = "ICT Protege Automation and Control Protocol wrapper"
 authors = ["Thomas Hobson <git@hexf.me>"]
 license = "MIT"
