@@ -6,7 +6,7 @@ from pyictacp.connection import Connection
 from pyictacp.checksum import Checksum
 from pyictacp.encryption import Encryption
 from typing import List
-from pyictacp.notbuiltintypes import ByteOrder, PanelInformation
+from pyictacp.typez import ByteOrder, PanelInformation
 from pyictacp.packet.data import DataPacketData, FirmwareBuildDataPacketData, FirmwareTypeDataPacketData, FirmwareVersionDataPacketData, PanelHardwareVersionDataPacketData, PanelSerialNumberDataPacketData
 from pyictacp.packet.command import CommandPacket, InactivityTimeCommandPacket, LoginCommandPacket, LogoutCommandPacket, PanelDescriptionCommandPacket, PollCommandPacket
 from pyictacp.record.area import Area

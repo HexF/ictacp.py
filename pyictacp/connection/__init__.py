@@ -1,6 +1,6 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
-from pyictacp.notbuiltintypes import ByteOrder
+from pyictacp.typez import ByteOrder
 from pyictacp.checksum import Checksum
 from pyictacp.encryption import Encryption
 from typing import List

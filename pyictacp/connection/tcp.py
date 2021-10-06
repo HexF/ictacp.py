@@ -1,6 +1,6 @@
 from __future__ import annotations
 from pyictacp.checksum import Checksum
-from pyictacp.notbuiltintypes import ByteOrder, NACKErrorCode
+from pyictacp.typez import ByteOrder, NACKErrorCode
 from pyictacp.packet.system import ACKPacket, NACKPacket
 from typing import List
 from pyictacp.packet.data import DataPacket, DataPacketData

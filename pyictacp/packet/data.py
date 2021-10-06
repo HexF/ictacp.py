@@ -3,7 +3,7 @@ from abc import ABC, abstractclassmethod, abstractmethod
 from pyictacp.util import all_subclasses
 from pyictacp.packet import Packet
 from typing import List, Literal
-from pyictacp.notbuiltintypes import AreaState, AreaTamperState, ByteOrder, DoorLockState, DoorState, FirmwareType, InputState, OutputState
+from pyictacp.typez import AreaState, AreaTamperState, ByteOrder, DoorLockState, DoorState, FirmwareType, InputState, OutputState
 
 import logging
 logger = logging.getLogger(__name__)

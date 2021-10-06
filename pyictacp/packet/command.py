@@ -1,7 +1,7 @@
 from __future__ import annotations
 from abc import ABC, abstractclassmethod, abstractmethod
 from pyictacp.util import all_subclasses
-from pyictacp.notbuiltintypes import ByteOrder, RecordType
+from pyictacp.typez import ByteOrder, RecordType
 from pyictacp.packet import Packet
 
 import logging

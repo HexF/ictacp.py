@@ -1,6 +1,6 @@
 from __future__ import annotations
 from abc import ABC, abstractclassmethod, abstractmethod
-from pyictacp.notbuiltintypes import ByteOrder, NACKErrorCode
+from pyictacp.typez import ByteOrder, NACKErrorCode
 from pyictacp.packet import Packet
 
 class SystemPacket(Packet, ABC, packet_type=0xC0):

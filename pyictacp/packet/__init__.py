@@ -3,7 +3,7 @@ from abc import ABC, abstractclassmethod, abstractmethod
 from pyictacp.util import all_subclasses
 from pyictacp.encryption import Encryption
 from pyictacp.checksum import Checksum
-from pyictacp.notbuiltintypes import ByteOrder
+from pyictacp.typez import ByteOrder
 
 import logging
 logger = logging.getLogger(__name__)
