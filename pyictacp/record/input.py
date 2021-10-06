@@ -1,7 +1,7 @@
 from pyictacp.connection import Connection
-from . import Record
-from ..packet.data import InputStatusDataPacketData
-from ..packet.command import PermanentInputBypassCommandPacket, RemoveInputBypassCommandPacket, RequestInputStatusCommandPacket, TemporaryInputBypassCommandPacket
+from pyictacp.record import Record
+from pyictacp.packet.data import InputStatusDataPacketData
+from pyictacp.packet.command import PermanentInputBypassCommandPacket, RemoveInputBypassCommandPacket, RequestInputStatusCommandPacket, TemporaryInputBypassCommandPacket
 
 class Input(Record,
         data_class = InputStatusDataPacketData,

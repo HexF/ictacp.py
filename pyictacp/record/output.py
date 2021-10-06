@@ -1,8 +1,8 @@
 from __future__ import annotations
 from pyictacp.connection import Connection
-from . import Record
-from ..packet.data import OutputStatusDataPacketData
-from ..packet.command import RequestOutputStatusCommandPacket, OutputOffCommandPacket, OutputOnTimedCommandPacket, OutputOnCommandPacket
+from pyictacp.record import Record
+from pyictacp.packet.data import OutputStatusDataPacketData
+from pyictacp.packet.command import RequestOutputStatusCommandPacket, OutputOffCommandPacket, OutputOnTimedCommandPacket, OutputOnCommandPacket
 from datetime import timedelta
 
 class Output(Record,

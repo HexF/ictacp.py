@@ -1,7 +1,7 @@
 from __future__ import annotations
 from abc import ABC, abstractclassmethod, abstractmethod
-from ..notbuiltintypes import ByteOrder, NACKErrorCode
-from ..packet import Packet
+from pyictacp.notbuiltintypes import ByteOrder, NACKErrorCode
+from pyictacp.packet import Packet
 
 class SystemPacket(Packet, ABC, packet_type=0xC0):
     def __init_subclass__(cls) -> None:

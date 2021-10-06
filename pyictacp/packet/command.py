@@ -1,8 +1,8 @@
 from __future__ import annotations
 from abc import ABC, abstractclassmethod, abstractmethod
-from ..util import all_subclasses
-from ..notbuiltintypes import ByteOrder, RecordType
-from ..packet import Packet
+from pyictacp.util import all_subclasses
+from pyictacp.notbuiltintypes import ByteOrder, RecordType
+from pyictacp.packet import Packet
 
 import logging
 logger = logging.getLogger(__name__)

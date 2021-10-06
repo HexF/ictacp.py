@@ -1,7 +1,7 @@
 from pyictacp.connection import Connection
-from . import Record
-from ..packet.data import TroubleInputStatusDataPacketData
-from ..packet.command import PermanentTroubleInputBypassCommandPacket, RemoveTroubleInputBypassCommandPacket, RequestTroubleInputStatusCommandPacket, TemporaryTroubleInputBypassCommandPacket
+from pyictacp.record import Record
+from pyictacp.packet.data import TroubleInputStatusDataPacketData
+from pyictacp.packet.command import PermanentTroubleInputBypassCommandPacket, RemoveTroubleInputBypassCommandPacket, RequestTroubleInputStatusCommandPacket, TemporaryTroubleInputBypassCommandPacket
 
 class TroubleInput(Record,
         data_class = TroubleInputStatusDataPacketData,

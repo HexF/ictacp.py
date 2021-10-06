@@ -1,7 +1,7 @@
 from pyictacp.connection import Connection
-from . import Record
-from ..packet.data import VariableStatusDataPacketData
-from ..packet.command import GetVariableCommandPacket, SetVariableCommandPacket
+from pyictacp.record import Record
+from pyictacp.packet.data import VariableStatusDataPacketData
+from pyictacp.packet.command import GetVariableCommandPacket, SetVariableCommandPacket
 
 class Variable(Record,
         data_class = VariableStatusDataPacketData,

@@ -1,9 +1,9 @@
 from __future__ import annotations
 from abc import ABC, abstractclassmethod, abstractmethod
-from ..util import all_subclasses
-from ..encryption import Encryption
-from ..checksum import Checksum
-from ..notbuiltintypes import ByteOrder
+from pyictacp.util import all_subclasses
+from pyictacp.encryption import Encryption
+from pyictacp.checksum import Checksum
+from pyictacp.notbuiltintypes import ByteOrder
 
 import logging
 logger = logging.getLogger(__name__)
