@@ -1,18 +1,12 @@
-from enum import Enum
+from typing import Any, List, Type, TypeVar
 
+Class = TypeVar('Class')
 
-class Checksum(Enum):
-    NONE = 0
-    CHECKSUM8 = 1
-    CRC16 = 2
+def all_subclasses(cls:Class) -> List[Class]:
+    subclasses = []
 
-def calculate_checksum(packet: bytes, checksum: Checksum) -> bytes:
-    if checksum == Checksum.NONE:
-        return bytes([])
+    for scls in cls.__subclasses__():
+        subclasses.append(scls)
+        subclasses.extend(all_subclasses(scls))
     
-    elif checksum == Checksum.CHECKSUM8:
-        return bytes([
-            sum([int(i) for i in packet]) % 256
-            ])
-    else:
-        raise NotImplementedError("%s is not a supported checksum" % checksum)
+    return subclasses
